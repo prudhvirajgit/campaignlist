@@ -1,0 +1,26 @@
+.campaignListpage{
+    display: absolute;
+}
+.campaignListpage_Admindashboard{
+ 
+}
+.campaignListpage_LeftBar{
+
+}
+.campaignListpage_container{
+
+    margin-left: 210px;
+    margin-top: -1000px;
+    margin-right: 208px;
+  
+
+}
+.campaignListpage_Titlebar,.campaignListpage_Filterbar{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+.campaignListpage_Mainlist{
+
+}
