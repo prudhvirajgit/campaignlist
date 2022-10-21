@@ -2,7 +2,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react";
 
-import Login from "./Login";
+import Login from "./";
 // import Signup from "./Signup";
 // import Admindashboard from "./Admindashboard.js"
 // import Salesdashboard from "./Salesdashboard.js"
@@ -10,11 +10,11 @@ import Login from "./Login";
 // import Model from "./Model.js";
 // import Verticalbar from "./Verticalbar.js"
 // import Horizontalbar from "./Horizontalbar.js"
-import Doughnut from "./Doughnut.js"
+//import Doughnut from "./Doughnut.js"
 // import Progressbar from "./Progressbar.js"
 // import Profile1 from "./Profile1.js"
 // import Profile from "./Profile.js"
-import CampaignListpage from "./campaignListpage"
+//import CampaignListpage from "./campaignListpage"
 import Campaigneditpage from "./Campaigneditpage";
 
 
@@ -24,10 +24,10 @@ export default function Navigation() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Login/>}></Route>
+          <Route path="/" element={<campaignListpage/>}></Route>
 
-          <Route path="/campaignListpage" element={<CampaignListpage/>}></Route>
-          <Route path="/Doughnut" element={<Doughnut/>}></Route>
+          {/* <Route path="/campaignListpage" element={<CampaignListpage/>}></Route> */}
+          {/* <Route path="/Doughnut" element={<Doughnut/>}></Route> */}
           <Route path="/Campaigneditpage" element={<Campaigneditpage/>}></Route>
 
         </Routes>
