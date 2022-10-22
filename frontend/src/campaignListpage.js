@@ -1,43 +1,60 @@
-import React from "react";
-
-import "./campaignListpage.css";
+import axios from "axios";
+import { useState} from "react";
+import "./Campaignlistpage.css";
 import Topbar from "./components/Topbar";
 import LeftBar from "./components/LeftBar";
-import Titlebar from "./components/Titlebar";
+import TitleBar from "./components/Titlebar";
 import Filterbar from "./components/Filterbar";
 import Mainlist from "./components/Mainlist";
-// import Form from "./components/Form";
+import { useEffect } from "react";
+export default function CampaignListPage() {
+  
+  const [array, setArray] = useState([]);
 
-export default function campaignListpage() {
+
+    // const url = "https://7z5c6akbv9.execute-api.us-east-1.amazonaws.com/verifyotp-dev-GetSingleLead";
+    useEffect(()=>{
+    const url = "http://localhost:3000/dev/GetSingleCampaign"
+    const data = {};
+    const Headers = {};
+    
+    axios.post(url, data, { Headers: Headers })
+      .then((res) => {
+        console.log("Response==>" + JSON.stringify(res.data));
+        for(const temp of res.data){
+          temp.isclicked = false
+        }
+        console.log(res.data)
+        setArray(res.data)
+        
+      })
+
+      .catch((err) => {
+        console.log("Error==>" + err);
+      });
+    },[])
+
+
   return (
     <>
-      <div className="campaignListpage">
-        <div className="campaignListpage_Admindashboard">
+      <div className="Campaignlist_page">
+        <div className="div1">
           <Topbar />
         </div>
-
-        <div className="campaignListpage_LeftBar">
-          <LeftBar />
-        </div>
-        <div className="campaignListpage_container">
-          {/* <div className="Productsrow">
-    <div className="Productlogo" ><BsFillBagCheckFill/></div>
-    <div className="title">Products</div>
-    <div className="Active">Products</div>
-    <div className="Draft">Products</div>
-    <div className="Assembly">Products</div>
-    <div className="addlogo"></div>
-    
-    <button>Add product</button>
-  </div> */}
-          <div className="campaignListpage_Filterbar">
-            <Titlebar />
+        <div className="div2">
+          <div className="div2_left">
+            <LeftBar />
           </div>
-          <div className="campaignListpage_Filterbar">
-            <Filterbar />
-          </div>
-          <div className="campaignListpage_Mainlist">
-            <Mainlist />
+          <div className="div2_right">
+            <div className="Campaignlist_TitleBar">
+              <TitleBar />
+            </div>
+            <div className="Campaignlitbar">
+              <Filterbar />
+            </div>
+            <div className="Mainlist">
+              <Mainlist array={array} setArray={setArray} />
+            </div>
           </div>
         </div>
       </div>

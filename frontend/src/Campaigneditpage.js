@@ -23,13 +23,13 @@ export default function Campaigneditpage() {
     const [Owner, setOwner] = useState("");
     const [ParentCampaign, setParentCampaign] = useState("");
     const [show, setShow] = useState(false)
-    const [Error1,setError1] = useState("")
-    const [Error2,setError2] = useState("")
-    const [Error3,setError3] = useState("")
-    const [Error4,setError4] = useState("")
-    const [Error5,setError5] = useState("")
-    const [Error6,setError6] = useState("")
-    const [Error,setError] = useState("")
+    const [Error1, setError1] = useState("")
+    const [Error2, setError2] = useState("")
+    const [Error3, setError3] = useState("")
+    const [Error4, setError4] = useState("")
+    const [Error5, setError5] = useState("")
+    const [Error6, setError6] = useState("")
+    const [Error, setError] = useState("")
     const handleclick = (e) => {
         setShow(!show)
     };
@@ -49,7 +49,7 @@ export default function Campaigneditpage() {
         axios.post(url, data, header)
             .then((res) => {
                 console.log("Response==> " + JSON.stringify(res.data))
-                let result = res.data+""
+                let result = res.data + ""
                 if (result.includes("CampaignName is mandatory"))
                     setError1("CampaignName is mandatory")
                 if (result.includes("Startdate is mandatory")) {
@@ -67,9 +67,9 @@ export default function Campaigneditpage() {
                 if (result.includes("ParentCampaign  is mandatory")) {
                     setError6("ParentCampaign  is mandatory")
                 }
-                 
-                    
-                
+
+
+
 
             })
             .catch((err) => {
@@ -87,8 +87,8 @@ export default function Campaigneditpage() {
         axios.post(url, data, header,)
             .then((res) => {
                 console.log("Response==>" + JSON.stringify(res.data))
-                
-               
+
+
                 console.log(res.data[0])
                 if (res.data.length > 0) {
                     //  console.log(res.data[0].txtParentCampaign)
@@ -98,7 +98,7 @@ export default function Campaigneditpage() {
                     setStatus(res.data[0].txtStatus)
                     setOwner(res.data[0].txtOwner)
                     setParentCampaign(res.data[0].txtParentCampaign)
-                
+
 
                 }
             })
@@ -155,7 +155,7 @@ export default function Campaigneditpage() {
                                                 <input className="form_rectangle" type="text" placeholder="" value={CampaignName} onChange={(e) => { setCampaignName(e.target.value) }} />
                                                 <label className="Err">{Error1}</label>
                                             </div>
-                                            
+
                                             <div className="form_inner31">
                                                 <label>Parent Campaign</label><br />
                                                 <input className="form_rectangle" type="text" placeholder="" value={ParentCampaign} onChange={(e) => { setParentCampaign(e.target.value) }} />
@@ -216,33 +216,33 @@ export default function Campaigneditpage() {
 
                             }
                             {
-                            show ? (
-                            <div className="checkList_outer">
-                                <div className="checkList_inner1">
-                                    <div className="checkList_inner11">
-                                        <BiSearch className="checkList_searchIcon" />
-                                        <input type={"text"} placeholder="Search Campaign" />
+                                show ? (
+                                    <div className="checkList_outer">
+                                        <div className="checkList_inner1">
+                                            <div className="checkList_inner11">
+                                                <BiSearch className="checkList_searchIcon" />
+                                                <input type={"text"} placeholder="Search Campaign" />
+                                            </div>
+                                            <div className="checkList_inner12">
+                                                <label>ADD</label>
+                                            </div>
+                                        </div>
+                                        <div className="checkList_outer_inner2">
+                                            <div className="checkList_inner2">
+                                                <input type={"checkbox"} className="checkBox" />
+                                                <label>Campaign One</label>
+                                            </div>
+                                            <List />
+                                            <List />
+                                            <List />
+                                            <List />
+                                            <List />
+                                            <List />
+                                        </div>
                                     </div>
-                                    <div className="checkList_inner12">
-                                        <label>ADD</label>
-                                    </div>
-                                </div>
-                                <div className="checkList_outer_inner2">
-                                    <div className="checkList_inner2">
-                                        <input type={"checkbox"} className="checkBox" />
-                                        <label>Campaign One</label>
-                                    </div>
-                                    <List />
-                                    <List />
-                                    <List />
-                                    <List />
-                                    <List />
-                                    <List />
-                                </div>
-                            </div>
-                            ) : (
-                            <></>
-                            )}
+                                ) : (
+                                    <></>
+                                )}
                             <div className="Campaigneditpage_topbar2_right_2_right">
                                 <Horizontalbar />
                             </div>

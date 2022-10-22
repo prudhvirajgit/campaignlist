@@ -1,26 +1,22 @@
-.campaignListpage{
-    display: absolute;
-}
-.campaignListpage_Admindashboard{
  
+  .Campaignlist_TitleBar,
+  .Campaignlist_Filterbar,
+  .Mainlist {
+    margin-left: 20vh;
+    min-width: 60%;
+  }
+  .Campaignlist_Topbar{
+    width: 100%;
+  }
+  .Campaignlist_Content_right{
+    min-width: 60%;
+  }
+
+.div2{
+  display: flex;
+  flex-direction: row;
 }
-.campaignListpage_LeftBar{
-
-}
-.campaignListpage_container{
-
-    margin-left: 210px;
-    margin-top: -1000px;
-    margin-right: 208px;
-  
-
-}
-.campaignListpage_Titlebar,.campaignListpage_Filterbar{
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
-
-.campaignListpage_Mainlist{
-
+.div2_right{
+  width: 93%;
+  padding-right: 250px;
 }

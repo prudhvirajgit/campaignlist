@@ -1,11 +1,10 @@
-import "./Filterbar.css";
+import "./Filterbar.css"
 import { BsFillCheckCircleFill, BsFilter } from "react-icons/bs";
 import { AiOutlineSearch } from "react-icons/ai"
 import { MdEdit, MdDelete } from "react-icons/md"
 import { VscListFlat } from "react-icons/vsc"
 import { CgMenuGridR } from "react-icons/cg"
 import { FaList } from "react-icons/fa"
-import React from "react";
 export default function Filterbar() {
     return <>
         <div className="filterbar">
