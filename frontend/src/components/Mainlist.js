@@ -15,7 +15,7 @@ export default function Mainlist({array, setArray}) {
             <ul>
               
               <div className="Header_Main1"><li>Campaign</li></div>
-              <div className="Header_Main2"><li>Parentcampaign</li></div>
+              <div className="Header_Main2"><li>Parent Campaign</li></div>
               <div className="Header_Main3"><li>Status</li></div>
               <div className="Header_Main4"><li>StartDate </li></div>
               <div className="Header_Main5"><li>End Date</li></div>

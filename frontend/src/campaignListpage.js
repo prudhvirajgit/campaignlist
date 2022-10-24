@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState} from "react";
-import "./Campaignlistpage.css";
+import "./campaignlistpage.css";
 import Topbar from "./components/Topbar";
 import LeftBar from "./components/LeftBar";
 import TitleBar from "./components/Titlebar";
