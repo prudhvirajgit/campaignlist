@@ -14,7 +14,8 @@ export default function CampaignListPage() {
 
     // const url = "https://7z5c6akbv9.execute-api.us-east-1.amazonaws.com/verifyotp-dev-GetSingleLead";
     useEffect(()=>{
-    const url = "http://localhost:3000/dev/GetSingleCampaign"
+    // const url = "http://localhost:3000/dev/GetSingleCampaign"
+    const url = "http://localhost:3000/dev/GetSingleCampaign";
     const data = {};
     const Headers = {};
     

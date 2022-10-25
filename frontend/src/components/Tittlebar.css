@@ -8,8 +8,8 @@ body{
     margin-top: 6%;
     display: flex;
     justify-content: space-between;
-    box-shadow: 0px 0px 0px 1px lightgray;
-
+    box-shadow: 0px 0px 0px 1px #f3f3f4;;
+  margin-left: 1px;
     
 }
 .Titlebar_bagSquare{
@@ -58,7 +58,7 @@ body{
     padding-left: 10px;
     border-radius: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 83px;
+    margin-left: 42px;
 
 }
 .Titlebar_top_col21 label,

@@ -1,4 +1,4 @@
-import "./titlebar.css";
+import "./titlebar1.css";
 import { GiBeachBag } from "react-icons/gi";
 import { BsFillPlusCircleFill } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
