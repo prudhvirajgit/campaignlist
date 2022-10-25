@@ -10,7 +10,7 @@
 }
 
 .Topbar_Bell_Circle,
-.Topbar_cancel_circle{
+.Topbar_cancel_circle1{
     background-color: white;
     border-radius: 20px;
     height: 35px;
@@ -126,8 +126,8 @@
     display: flex;
     flex-direction: row;
 }
-.Topbar_cancel_circle{
-    margin-left: 35px;
+.Topbar_cancel_circle1{
+    margin-left: 11px;
 }
 .Topbar_content{
     background-color: white;
@@ -136,6 +136,7 @@
     justify-content: space-around;
     margin-right: 200px;
     position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .Topbar_content_cola{
     background-color: white;
@@ -155,12 +156,12 @@
     padding-left: 40px;
     padding-top: 10px;
 }
-.Topbar_content_cola_list1 {
+.Topbar_content_cola_list1a {
     background-color: #f3f3f4;
     height: 60px;
     border: 1px solid rgb(235, 234, 234);
     margin-right: 115px;
-    width: 291px;
+    width: 310px;
     margin-left: -12px;
 }
 .Topbar_content_colb{
@@ -173,9 +174,9 @@
 .Topbar_label_head{
     font-size: 20px;
 }
-.Topbar_content_colb_list1{
+.Topbar_content_colb_list123{
     padding: 10px 20px 10px 10px;
-    width: 150px;
+    width: 175px;
     display: flex;
     align-items: center;
 }
@@ -191,7 +192,7 @@
     padding-top: 3px;
 }
 
-.Topbar_content_colb_list1 label{
+.Topbar_content_colb_list123 label{
     padding-left: 35px;
     display: flex;
     flex-direction: row;

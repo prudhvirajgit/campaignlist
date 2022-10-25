@@ -56,7 +56,7 @@ export default function Topbar() {
                     <div className="Topbar_Bell_Circle">
                         <BsFillBellFill className="Topbar_BellIcon" />
                     </div>
-                    <div className="Topbar_cancel_circle">
+                    <div className="Topbar_cancel_circle1">
                         <MdCancel className="Topbar_cancelIcon" />
                     </div>
                 </div>
@@ -83,11 +83,11 @@ export default function Topbar() {
                                 <BsFillBookFill className="Topbar_bookicon" />
                                 <label>Prospects</label>
                             </div>
-                            <div className="Topbar_content_cola_list1"></div>
-                            <div className="Topbar_content_cola_list1"></div>
-                            <div className="Topbar_content_cola_list1"></div>
-                            <div className="Topbar_content_cola_list1"></div>
-                            <div className="Topbar_content_cola_list1"></div>
+                            <div className="Topbar_content_cola_list1a"></div>
+                            <div className="Topbar_content_cola_list1a"></div>
+                            <div className="Topbar_content_cola_list1a"></div>
+                            <div className="Topbar_content_cola_list1a"></div>
+                            <div className="Topbar_content_cola_list1a"></div>
                         </div>
 
 
@@ -96,11 +96,11 @@ export default function Topbar() {
                                 <label className="Topbar_label_head">Leads</label>
 
                                 <div className="Topbar_content_colb_list">
-                                    <div className="Topbar_content_colb_list1">
+                                    <div className="Topbar_content_colb_list123">
                                         <FaCarAlt className="Topbar_caricon" />
                                         <div className="Tobar_col2_listlead" onClick={(e) => { handleclick(e) }}><label>List Leads</label></div>
                                     </div>
-                                    <div className="Topbar_content_colb_list1">
+                                    <div className="Topbar_content_colb_list123">
                                         <BsFillBookFill className="Topbar_bookicon" />
                                         <label>Create Lead</label>
                                     </div>
@@ -118,11 +118,11 @@ export default function Topbar() {
                             <div className="Topbar_content_colc">
                                 <label className="Topbar_label_head">Campaign</label>
                                 <div className="Topbar_content_colb_list">
-                                    <div className="Topbar_content_colb_list1">
+                                    <div className="Topbar_content_colb_list123">
                                         <BsFillBookFill className="Topbar_bookicon" />
                                         <div className="Tobar_col2_listcampaign" onClick={(e) => { handleclick(e) }}> <label>List Campaign</label></div>
                                     </div>
-                                    <div className="Topbar_content_colb_list1">
+                                    <div className="Topbar_content_colb_list123">
                                         <BsFillBookFill className="Topbar_bookicon" />
                                         <label>Create Campaign</label>
                                     </div>
@@ -136,7 +136,7 @@ export default function Topbar() {
                             <div className="Topbar_content_cold">
                                 <label className="Topbar_label_head">Prospect</label>
                                 <div className="Topbar_content_colb_list">
-                                    <div className="Topbar_content_colb_list1">
+                                    <div className="Topbar_content_colb_list123">
                                         <BsFillBookFill className="Topbar_bookicon" />
                                         <div className="Tobar_col2_listprospect" onClick={(e) => { handleclick(e) }}><label>List Prospect</label></div>
                                     </div>

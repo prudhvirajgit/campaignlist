@@ -34,6 +34,7 @@ margin-left: -14px;
   margin: 15px;
   padding-right: 20px;
   color:rgba(125, 143, 177, 1);
+  margin-left: -2px;
 
 }
 
@@ -158,7 +159,7 @@ color: white;
   margin-left:15px;
 }
 .itmEmail{
-  width:160px;
+  width: 77px;
   margin-left:15px;
 }
 
@@ -181,12 +182,12 @@ color: white;
 }
 
 .Header_Main3{
-  width:45px;
-  margin-left:-39px;
+  width:10px;
+  margin-left:-30px;
 }
 .Header_Main4{
   width:103px;
-  margin-left:61px;
+  margin-left:129px;
 }
 .Header_Main5{
   width:90px;
@@ -198,6 +199,6 @@ color: white;
 }
 .Header_Main7{
   width: 43px;
-  margin-left: 47px;
+  margin-left: -4px;
 
 }
